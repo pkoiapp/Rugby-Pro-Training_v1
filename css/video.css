@@ -1,0 +1,56 @@
+.interfaceVideo {
+    display: grid;
+    grid-template-columns: 500px 2fr; /*repeat(2, 1fr);*/
+    grid-gap: 1rem;
+    /*margin-top: .5rem;
+    margin-bottom: 2rem;*/
+}
+
+video{
+    width: 100%;
+    height: auto;
+}
+
+.video{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+    max-width: 100%;
+}
+
+.actions{
+    display: grid;
+    grid-template-rows: repeat(11, 1fr);
+    grid-gap: 1rem;
+}
+
+.actions button, select:hover{
+    cursor: pointer;
+    width: 100%;
+}
+
+.actions button{
+    display: block;
+}
+
+.actions select{
+    font-size: 1rem;
+    width: 100%;
+    /*margin-left: 1rem;*/ 
+}
+
+.listeSequence thead th:first-child {
+    padding-left: 0rem;
+}
+
+.listeSequence th, td {
+    padding: 1rem 0rem;
+    color: #444;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.listeSequence tbody tr:hover {
+    background-color: #ccc;
+    cursor: pointer;
+  }

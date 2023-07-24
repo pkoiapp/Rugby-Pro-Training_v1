@@ -1,0 +1,49 @@
+[
+    {
+      "Journee": 1,
+      "Date": "18/09/2022",
+      "EquipeLoc": "Agen",
+      "ScoreLoc":30,
+      "ScoreExt": 10,
+      "EquipeExt": "Toulouse",
+      "FormuleSaisie": "C",
+      "LienVideo": "c:...",
+      "InterfaceJoueur": "checked"
+    },
+    {
+      "Journee": 2,
+      "Date": "25/09/2022",
+      "EquipeLoc": "Toulon",
+      "ScoreLoc":18,
+      "ScoreExt": 19,
+      "EquipeExt": "Agen",
+      "FormuleSaisie": "A",
+      "LienVideo": "c:...",
+      "InterfaceJoueur": ""
+    },
+    {
+      "Journee": 3,
+      "Date": "11/03/2023",
+      "EquipeLoc": "Angleterre",
+      "ScoreLoc":10,
+      "ScoreExt": 53,
+      "EquipeExt": "France",
+      "FormuleSaisie": "A",
+      "LienVideo": "https://www.youtube.com/watch?v=G44rTY6ZuKQ",
+      "InterfaceJoueur": ""
+    }
+    ,
+    {
+      "Journee": 2,
+      "Date": "23/08/2014",
+      "EquipeLoc": "Nouvelle-Zélande",
+      "ScoreLoc":20,
+      "ScoreExt": 51,
+      "EquipeExt": "Australie",
+      "FormuleSaisie": "A",
+      "LienVideo": "./Video/nz-australie 1.wmv",
+      "InterfaceJoueur": ""
+    }
+    
+  ]
+  

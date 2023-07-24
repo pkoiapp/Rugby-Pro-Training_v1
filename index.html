@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Rugby Pro Training</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/1.3.0/css/line-awesome.min.css">
+    <!--<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">-->
+</head>
+<body>
+   <input type="checkbox" id="menu-toggle">
+    <div class="sidebar">
+        <div class="side-header">
+            <h3><b>R<span>ugby Pro Training</span></b></h3>
+        </div>
+        
+        <div class="side-content">
+            <div class="profile">
+                <div class="profile-img bg-img" style="background-image: url(img/Logo3.png)"></div>
+                <h4><a href="mailto:videoetstats@rugbyprotraining.com">Contact</a></h4>
+                <small>Vidéo & Statistiques</small>
+            </div>
+
+            <div class="side-menu">
+                <ul>
+                    <li>
+                       <a href="index.html" class="active">
+                            <span class="las la-list-ol"></span>
+                            <small>Liste matches</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="">
+                            <span class="las la-user-alt"></span>
+                            <small>Profile</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="">
+                            <span class="las la-envelope"></span>
+                            <small>Mailbox</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="">
+                            <span class="las la-clipboard-list"></span>
+                            <small>Projects</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="">
+                            <span class="las la-shopping-cart"></span>
+                            <small>Orders</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="">
+                            <span class="las la-tasks"></span>
+                            <small>Tasks</small>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        
+        <header>
+            <div class="header-content">
+                
+                <label for="menu-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+                <!--<div class="title-header">
+                    <h1>Vidéo & Statistiques</h1>
+                </div>-->
+                <div class="header-menu">
+                    <label for="">
+                        <span class="las la-search"></span>
+                    </label>
+                    
+                    <div class="notify-icon">
+                        <span class="las la-envelope"></span>
+                        <span class="notify">4</span>
+                    </div>
+                    
+                    <div class="notify-icon">
+                        <span class="las la-bell"></span>
+                        <span class="notify">3</span>
+                    </div>
+                    
+                    <div class="user">
+                        <div class="bg-img" style="background-image: url(img/Logo3.jpg)"></div>
+                        <span class="las la-power-off"></span>
+                        <span class="logout" onclick="logout()">Logout</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        
+        <main>
+           
+
+            <div class="page-header accordion">
+                <h2>Analyse des matches en ligne</h2>
+                <!--<small>Analyse des matchs en ligne</small>-->
+            </div>
+            
+            <div class="analytics panel">
+
+                <div class="card">
+                    <div class="info-head">
+                        <span class="las la-file-video"></span>
+                        <p><b>Mettre une vidéo en ligne</b><br><br>
+                            - 1 fichier vidéo du match (max 99 min)<br>
+                            ou<br>
+                            - 2 fichiers vidéos 1 par mi-temps
+                        </p>
+                            
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="info-head">
+                        <span class="las la-info-circle"></span>
+
+                        <p>Intituler correctement les fichiers vidéos :<br><br>
+                        - équipelocale-équipeextérieure-date-journée<br>
+                        ou<br>
+                        - équipelocale-équipeextérieure-M1-date-journée<br>
+                        - équipelocale-équipeextérieure-M2-date-journée</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-content">
+                <div class="records table-responsive">
+
+                    <div class="record-header">
+                        <div class="add">
+                            <!--<span>Entries</span>
+                            <select name="" id="">
+                                <option value="">ID</option>
+                            </select>
+                            <button>Add record</button>-->
+                            <!--<button onclick="ajouterLigne()"-->
+                            <button>Ajouter un match</button>
+                        </div>
+
+                        <div class="browse">
+                           <input type="search" placeholder="Search" class="record-search">
+                            <!--<select name="" id="">
+                                <option value="">Status</option>
+                            </select>-->
+                        </div>
+                    </div>
+
+                    <div>
+                        <table width="100%">
+                            <thead>
+                                <tr>
+                                    <th><span class="las la-sort"></span> Journée</th>
+                                    <th><span class="las la-sort"></span> Date</th>
+                                    <th><span class="las la-sort"></span> Equipe locale</th>
+                                    <th><span class="las la-sort"></span> Score</th>
+                                    <th><span class="las la-sort"></span> Equipe extérieure</th>
+                                    <th><span class="las la-sort"></span> Formule saisie</th>
+                                    <th><span class="las la-sort"></span> Fichier video match</th>
+                                    <th><span class="las la-sort"></span> Interface joueur</th>
+                                    <th>Modifier</th>
+                                </tr>
+                            </thead>
+                            <tbody class="ligne-match" id="table-body">
+                                <!-- Table rows will be dynamically generated here -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            
+            </div>
+            
+        </main>
+        
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
