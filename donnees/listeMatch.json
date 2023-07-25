@@ -36,10 +36,10 @@
     {
       "Journee": 2,
       "Date": "23/08/2014",
-      "EquipeLoc": "Nouvelle-Zélande",
+      "EquipeLoc": "Australie",
       "ScoreLoc":20,
       "ScoreExt": 51,
-      "EquipeExt": "Australie",
+      "EquipeExt": "Nouvelle-Zélande",
       "FormuleSaisie": "A",
       "LienVideo": "./Video/nz-australie 1.wmv",
       "InterfaceJoueur": ""
